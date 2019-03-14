@@ -1,0 +1,43 @@
+#include <iostream>
+#include <conio.h>
+#include <string>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{ 
+	//declaration
+	double num1,num2,num3,num4,num5;
+	double sum;
+	double average;
+
+	//description
+	cout << setprecision(5) << fixed << showpoint;
+	cout << "Insert the first number: " <<endl;
+	cin >> num1;
+	cout << "Insert the second number: " <<endl;
+	cin >> num2;
+	cout << "Insert the third number: " <<endl;
+	cin >> num3;
+	cout << "Insert the fourth number: " <<endl;
+	cin >> num4;
+	cout << "Insert the fifth number: " <<endl;
+	cin >> num5;
+
+	//calculations
+	sum=num1+num2+num3+num4+num5;
+	cout << "the sum of the numbers: " << sum <<endl;
+	average=sum/5;
+	cout << "the average of the numbers: " << average <<endl;
+
+	cout << "Nearest integer of num1: " << static_cast <int> (num1) <<endl;
+	cout << "Nearest integer of num2: " << static_cast <int> (num2) <<endl;
+	cout << "Nearest integer of num3:" << static_cast <int> (num3) <<endl;
+	cout << "Nearest integer of num4: " << static_cast <int> (num4) <<endl;
+	cout << "Nearest integer of num5: " << static_cast <int> (num5) <<endl;
+
+	_getch();
+	return 0;
+}
+
